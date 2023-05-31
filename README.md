@@ -84,3 +84,10 @@ const MenSchema = new mongoose.connect({
 // we are creating a new Collection.
 const MensRanking = new mongoose.model('MenRanking',MenSchema)
 ```
+
+module.exports = MensRanking
+
+![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/8d6346c8-c72c-49a6-a7bd-0f1771a2e3be)
+![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/6ccfe1b0-d04a-4c12-bdcf-6fd08329d51a)
+
+
