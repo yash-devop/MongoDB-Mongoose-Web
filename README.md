@@ -93,6 +93,7 @@ module.exports = MensRanking
 
 Now , Lets Configure the ```Router Folder```
 
+![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/3b344347-f1e9-41b7-bd19-915d749c658c)
 
 Code : ```Mens.js```
 ```
@@ -113,3 +114,35 @@ Router.post('/', async(req,res)=>{
 
 module.exports = Router;
 ```
+
+So we have to make some changes to our ```Index.js``` file : so,
+
+![Uploading image.png…]()
+
+Code :
+```
+require('dotenv').config();
+const express = require("express");
+const app = express();
+const mensRoute = require('./Routers/Mens.js')
+app.use(express.json());  //Middleware : to allow the json res.
+
+
+const mongoose = require('mongoose');
+// Database Connectivity:
+
+mongoose.connect(process.env.MONGO_DB_URL,{
+    useNewUrlParser : true,
+    useUnifiedTopology: true,
+}).then(()=>console.log("Database Connected Successfully "))
+.catch((err)=>console.log(err))
+
+// using the Router from Routers folder.
+app.use('/mens',mensRoute);
+ 
+app.listen(3000 ,()=>{
+    console.log("Server Connected Successfully.");
+});
+```
+
+![Uploading image.png…]()
