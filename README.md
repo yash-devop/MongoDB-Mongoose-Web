@@ -2,7 +2,7 @@
 I created this repo , just to save my Mongodb initial starter codes , so that it will be easy for me to access it whenever i feel that i forgot the syntax or want to refer to the code once.
 
 # folder structure :  MVC structure
-``` 
+```
 M=> Model
 V=>Views
 C=>Controller
@@ -41,7 +41,8 @@ app.listen(process.env.PORT || 5000 ,()=>{
 });
 ```
 
-# Models folder :
+Models Folder : 
+
 I have created a file inside this folder called ```Mens.js``` where the Mens runners list are store.
 ![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/b02b5df8-3d1b-4e96-b68c-c1ca2077d14d)
 
@@ -93,7 +94,8 @@ module.exports = MensRanking
 
 Now , Lets Configure the ```Router Folder```
 
-![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/3b344347-f1e9-41b7-bd19-915d749c658c)
+<!-- ![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/3b344347-f1e9-41b7-bd19-915d749c658c) -->
+![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/8473885c-9ebb-475e-902c-232e9c88deb3)
 
 Code : ```Mens.js```
 ```
@@ -117,7 +119,7 @@ module.exports = Router;
 
 So we have to make some changes to our ```Index.js``` file : so,
 
-![Uploading image.png…]()
+![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/d371be4d-6bac-49d6-a395-3f6a8e05ffe9)
 
 Code :
 ```
@@ -145,4 +147,12 @@ app.listen(3000 ,()=>{
 });
 ```
 
-![Uploading image.png…]()
+Testing the REST API using Postman tool : 
+
+![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/fe0cc9ab-c4a3-4eab-8008-0408fb4b42ac)
+
+# IMPORTANT :  ![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/b436db7f-4387-4651-b128-a8125c810e97)
+
+```(Note: the data should match the fields we have created in our schema. Fields can be also be 1 or 2 but should not more than the Defined Model schema.)```
+![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/8c6ec57c-af1e-45ab-8ee9-1c2212b5a3f7)
+
