@@ -167,3 +167,8 @@ RESPONSE :
 
 MongoDB Atlas Database Response :
 ![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/3d8f0b38-d7fe-4c46-8f3b-002cf6641dcd)
+
+Now Similarly , create other routes like ``` GET PUT PATCH DELETE .. ``` in the ```Router folder``` 
+
+
+^-^  Happy Coding  ^-^
