@@ -43,13 +43,13 @@ app.listen(process.env.PORT || 5000 ,()=>{
 
 # Models folder :
 I have created a file inside this folder called ```Mens.js``` where the Mens runners list are store.
-![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/cf88a07f-0f55-4e65-afe0-afa736d80f01)
+![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/b02b5df8-3d1b-4e96-b68c-c1ca2077d14d)
 
 code : 
 ```
 const mongoose = require('mongoose')
 
-const MenSchema = new mongoose.connect({
+const MenSchema = new mongoose.Schema({
     ranking : {
         type: Number,
         require: true, // this ranking field is REQUIRED ,else ERROR. 
@@ -91,3 +91,25 @@ module.exports = MensRanking
 ![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/6ccfe1b0-d04a-4c12-bdcf-6fd08329d51a)
 
 
+Now , Lets Configure the ```Router Folder```
+
+
+Code : ```Mens.js```
+```
+const Router = require('express').Router();
+const MensRankingModel = require('../Models/Mens');
+
+Router.post('/', async(req,res)=>{
+    try {
+        const mensRecord = new MensRankingModel(req.body);
+        const docResponse = await mensRecord.save();
+        console.log(res.body);
+        res.json(docResponse)
+    } catch (error) {
+        console.log(error)
+        res.status(400).json(error)
+    }
+})
+
+module.exports = Router;
+```
