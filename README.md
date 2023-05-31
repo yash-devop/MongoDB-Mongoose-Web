@@ -156,3 +156,6 @@ Testing the REST API using Postman tool :
 ```(Note: the data should match the fields we have created in our schema. Fields can be also be 1 or 2 but should not more than the Defined Model schema.)```
 ![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/8c6ec57c-af1e-45ab-8ee9-1c2212b5a3f7)
 
+RESPONSE :
+
+![image](https://github.com/yash-devop/MongoDB-Mongoose-Web/assets/112558970/31c43651-57f2-488f-a7a2-6458085ea699)
